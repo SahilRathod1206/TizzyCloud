@@ -1,0 +1,186 @@
+.contact {
+    padding: 160px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/contact/contact-background-layer.svg') no-repeat center/cover;
+    z-index: 0;
+}
+
+.contact .dots-shape-left,
+.contact .dots-shape-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.contact .dots-shape-left {
+    left: -50px;
+    top: -60px;
+}
+
+.contact .dots-shape-right {
+    right: -30px;
+    top: -40px;
+}
+
+.contact small {
+    color: #ced4da;
+    padding-bottom: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.contact h2 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact p {
+    color: #dee2e6;
+    line-height: 1.8;
+}
+
+.contact form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact form .form-control {
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: #ffffff;
+    font-size: 16px;
+    color: #495057;
+}
+
+.contact .agree {
+    color: #5dade2;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .btn.contact-btn {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.contact .trusted-companies {
+    padding-top: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.contact .trusted-companies h3 {
+    margin-bottom: 40px;
+}
+
+.contact .trusted-companies ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.contact .trusted-companies ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+.contact .trusted-companies ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1199px) {
+    .contact {
+        padding: 140px 0 60px;
+    }
+
+    .contact form .row {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 120px 0 50px;
+    }
+
+    .contact .dots-shape-left,
+    .contact .dots-shape-right {
+        display: none;
+    }
+
+    .contact .trusted-companies {
+        padding-top: 80px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        padding: 100px 0 40px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    .contact form {
+        margin-top: 30px;
+    }
+
+    .contact .trusted-companies h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .contact .trusted-companies ul li {
+        width: 90px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact form .form-control {
+        font-size: 14px;
+    }
+
+    .contact .trusted-companies ul {
+        gap: 20px;
+    }
+
+    .contact .row small{
+        text-align: center;
+    }
+
+    .contact .btn.contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

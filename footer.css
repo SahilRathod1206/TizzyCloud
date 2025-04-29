@@ -1,0 +1,148 @@
+.footer {
+    padding: 65px 0;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer .footer-logo-col {
+    padding-right: 120px;
+}
+
+.footer .footer-logo-col p {
+    padding: 35px 0 30px;
+    line-height: 30px;
+}
+
+.footer .footer-logo-col .logo-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.footer .footer-logo-col .logo-row img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer h5 {
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+
+.footer ul li a {
+    display: block;
+    padding-bottom: 25px;
+    text-decoration: none;
+    color: #bbdefb;
+    font-weight: 500;
+}
+
+.footer ul li a:hover {
+    color: #ffc107;
+}
+
+/* Original social icons section */
+.footer-bottom {
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-bottom .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.footer-bottom .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #1976d2;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom .social-icons a:hover {
+    background: #ffc107;
+    color: #ffffff;
+}
+
+.footer .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: #ffffff;
+
+    padding: 8px;
+    border-radius: 8px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* New: Fancy Social Icons (right corner) */
+.footer .sosi {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.footer .sosi a {
+    transform: rotate(0deg);
+    padding-top: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .footer .footer-logo-col {
+        padding-right: 10px;
+    }
+
+    .footer .container {
+        margin-bottom: 30px;
+    }
+
+    .footer .sosi {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .sosi .icon a {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 435px) {
+    .footer .sosi li {
+        width: 35px;
+    }
+
+    .footer .sosi .icon a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .sosi .icon a i {
+        font-size: 22px;
+    }
+}

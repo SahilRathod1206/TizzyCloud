@@ -1,0 +1,355 @@
+/* General Hero Banner Styling */
+.hero-banner {
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.hero-banner::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 65%;
+    background-color: #f8f9fa;
+    left: 0;
+    top: 0;
+}
+
+.hero-banner::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("./images/hero/right-background.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Left Hero Content */
+.hero-banner .left-hero-color {
+    padding-top: 150px;
+    z-index: 1;
+    position: relative;
+    margin-left: 30px;
+}
+
+.hero-banner .left-hero-color::before {
+    position: absolute;
+    content: "";
+    top: 150px;
+    left: -150px;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("./images/hero/leftside-backlayer-icons.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-banner .left-hero-color img {
+    margin-left: -35px;
+}
+
+.hero-banner .left-hero-color h1 {
+    font-size: 60px;
+    max-width: 100%;
+}
+
+.hero-banner .left-hero-color p {
+    color: #a3a3a3;
+    font-size: 20px;
+    padding: 30px 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.fa-play {
+    transform: rotate(-90deg);
+}
+
+.partner-logo {
+    /* gap: 100px; */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.partner-logo ul {
+    gap: 80px;
+    margin: 20px 10px
+}
+
+.partner-logo img {
+    width: 250px;
+}
+
+.right-hero-color {
+    z-index: 1;
+    padding-top: 0px
+}
+
+.right-hero-color img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social Icons Styling */
+.sosi .wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    font-size: 35px;
+    margin: 45px;
+}
+
+.sosi .icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    transform: rotate(-90deg);
+}
+
+.sosi .icon.facebook a {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.sosi .icon.twitter a {
+    background-color: #00aced;
+    color: #fff;
+}
+
+.sosi .icon.instagram a {
+    background-color: #e1306c;
+    color: #fff;
+}
+
+.sosi .icon.linkedin a {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.sosi .icon.google-reviews a {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.sosi .icon.whatsapp a {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.sosi .icon.facebook .tooltip {
+    background-color: #3b5998;
+}
+
+.sosi .icon.twitter .tooltip {
+    background-color: #00aced;
+}
+
+.sosi .icon.instagram .tooltip {
+    background-color: #e1306c;
+}
+
+.sosi .icon.linkedin .tooltip {
+    background-color: #0077b5;
+}
+
+.sosi .icon.google-reviews .tooltip {
+    background-color: #db4437;
+}
+
+.sosi .icon.whatsapp .tooltip {
+    background-color: #25d366;
+}
+
+/* Optional: Smooth scale on hover */
+.sosi .icon:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 1100px) {
+    .hero-banner .sosi .icon {
+        position: relative;
+    }
+
+    .hero-banner .sosi .icon::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 6px;
+        white-space: nowrap;
+        font-size: 14px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero-banner .sosi .icon:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-5px);
+    }
+
+    .hero-banner .sosi .icon.facebook:hover::after {
+        background-color: #3b5998;
+    }
+
+    .hero-banner .sosi .icon.twitter:hover::after {
+        background-color: #00aced;
+    }
+
+    .hero-banner .sosi .icon.instagram:hover::after {
+        background-color: #e1306c;
+    }
+
+    .hero-banner .sosi .icon.linkedin:hover::after {
+        background-color: #0077b5;
+    }
+
+    .hero-banner .sosi .icon.google-reviews:hover::after {
+        background-color: #db4437;
+    }
+
+    .hero-banner .sosi .icon.whatsapp:hover::after {
+        background-color: #25d366;
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-banner .left-hero-color h1 {
+        font-size: 50px;
+    }
+
+    .hero-banner .left-hero-color p {
+        font-size: 16px;
+    }
+
+    .partner-logo img {
+        width: 150px;
+    }
+
+    .sosi li {
+        width: 30px;
+    }
+
+    .sosi .icon a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .sosi .icon a i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Hide the Partner Logos section on medium screens */
+    .partner-logo {
+        display: none;
+    }
+
+    .hero-banner .left-hero-color h1 {
+        font-size: 45px;
+    }
+
+    .hero-banner .left-hero-color p {
+        font-size: 14px;
+    }
+
+    .sosi .icon a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sosi .icon a i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-logo {
+        display: flex;
+    }
+
+    .partner-logo ul {
+        margin-left: 48px;
+    }
+
+    .sosi {
+        display: flex;
+    }
+
+    .sosi .wrapper {
+        margin: 30px 0px;
+    }
+
+    .hero-banner .left-hero-color h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner .left-hero-color p {
+        font-size: 14px;
+    }
+
+    /* Make the image smaller for mobile devices */
+    .hero-banner .right-hero-color img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-banner .right-hero-color img {
+        max-width: 100%;
+    }
+
+    .hero-banner::after {
+        background-image: none;
+        background-color: #F9F9FB;
+    }
+
+    .hero-banner .left-hero-color h1 {
+        font-size: 35px;
+    }
+
+    .hero-banner .left-hero-color p {
+        font-size: 22px;
+    }
+
+    .partner-logo ul {
+        margin-left: -6px;
+    }
+
+    .sosi .wrapper {
+        margin: 25px 7px;
+    }
+
+    .sosi .icon a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .sosi .icon a i {
+        font-size: 14px;
+    }
+}
